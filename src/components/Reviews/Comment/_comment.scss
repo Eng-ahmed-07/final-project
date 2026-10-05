@@ -49,9 +49,9 @@
 
     p {
         width: 65%;
-        font-size: .65rem;
+        font-size: $font-size-compact;
         font-weight: 400;
-        line-height: 1.1rem;
+        line-height: 1.5;
         color: $TextColor1;
     }
 }

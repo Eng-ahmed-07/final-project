@@ -17,13 +17,13 @@
     }
 
     a {
-        font-size: .55rem;
+        font-size: $font-size-compact;
     }
 
     p {
         width: 50%;
-        font-size: .65rem;
-        line-height: 1rem;
+        font-size: $font-size-compact;
+        line-height: 1.5;
         font-weight: 400;
         color: $TextColor1;
 

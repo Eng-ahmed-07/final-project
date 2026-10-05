@@ -5,7 +5,7 @@
     width: 100%;
     height: 100vh;
     background-color: #000000af;
-    z-index: 14;
+    z-index: 15;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.3s ease, opacity 0.3s ease 0s;
@@ -25,7 +25,7 @@
         background-color: #fff;
         box-shadow: 0 0 .6rem #ffffff38;
         transition: right 0.3s ease;
-        z-index: 15;
+        z-index: 16;
 
         &.show {
             right: 0;
@@ -69,6 +69,8 @@
             overflow: hidden;
 
             input {
+                background: transparent;
+                color: $TextColor1;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -160,7 +162,7 @@
                         .price-discount {
                             color: #ff1111d7;
                             text-transform: capitalize;
-                            font-size: .65rem;
+                            font-size: $font-size-compact;
                             font-weight: 500;
                             transition: 0.5s;
                         }
@@ -187,12 +189,13 @@
             }
 
             .box-search {
+                height: 4rem;
                 input {
-                    font-size: 1.2rem;
+                    font-size: 1.5rem;
                 }
 
                 .icon {
-                    font-size: 1.5rem;
+                    font-size: 1.9rem;
                 }
             }
 

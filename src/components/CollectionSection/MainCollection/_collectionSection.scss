@@ -1,5 +1,5 @@
 .collection-section {
     width: 100%;
     margin-block: 5rem;
-    @include flex(row, center, center, 1rem);
+    @include flex(row, center, stretch, 1rem);
 }

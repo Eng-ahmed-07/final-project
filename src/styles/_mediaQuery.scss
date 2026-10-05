@@ -1,9 +1,11 @@
 .px {
-    padding-inline: 1rem;
+    margin-inline: auto;
+    padding-inline: clamp($space-4, 3vw, $space-12);
+    box-sizing: border-box;
 }
 
 .py {
-    padding-block: 3rem 2rem;
+    padding-block: $space-12 $space-8;
 }
 
 html {
@@ -11,43 +13,11 @@ html {
 }
 
 @media (min-width: 768px) {
-    .px {
-        padding-inline: 1.5rem;
-    }
-
     .py {
-        padding-block: 3.5rem 2.5rem;
+        padding-block: $space-16 $space-12;
     }
 
     html {
         font-size: 16px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .px {
-        padding-inline: 2em;
-    }
-
-    .py {
-        padding-block: 4rem 3rem;
-    }
-
-    html {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 1440px) {
-    .px {
-        padding-inline: 2.5rem;
-    }
-
-    .py {
-        padding-block: 6rem;
-    }
-
-    html {
-        font-size: 18px;
     }
 }

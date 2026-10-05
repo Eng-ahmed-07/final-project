@@ -1,20 +1,32 @@
 .box-You-May-Also-Like {
+    container-type: inline-size;
     @include flex(row, center, center, 1rem);
     width: 100%;
     padding: 2rem 0;
 
-    .swiper-container {
+    @container (min-width: 864px) {
+        .box-card .box-image-card {
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    .swiper {
         width: 100%;
+        min-width: 0;
     }
 
     .swiper-slide {
+        width: clamp(145px, calc(25cqw - .75rem), 260px);
+        flex-shrink: 0;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .box-card {
+        flex: 0 0 100%;
         width: 100%;
+        min-width: 0;
     }
 }
 

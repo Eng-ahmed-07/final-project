@@ -1,7 +1,7 @@
 .error{
     @include flex(row, flex-start, center, .2rem);
     color: $error;
-    font-size: .6rem;
+    font-size: $font-size-compact;
     font-weight: 400;
     margin-block: .3rem;
     text-align: left;

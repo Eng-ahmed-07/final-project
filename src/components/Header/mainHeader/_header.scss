@@ -1,28 +1,28 @@
 header {
     @include flex(row, space-between, center, "");
+
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    margin: 0 auto;
     padding-block: 1.2rem;
-    width: 100%;
-    z-index: 4;    
+    z-index: 4;
     transition: transform 0.3s ease, background-color 0.3s ease;
 
     &.fixed {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        transform: translateY(0);
+        right: 0;
+        margin: 0 auto;
         background-color: #fff;
-        box-shadow: 0 .1rem .2rem #5454541a;
+        box-shadow: 0 0.1rem 0.2rem #5454541a;
 
         &.hidden {
-            transform: translateY(-100%); 
+            transform: translateY(-100%);
         }
-
     }
-    
 }
 
 @media screen and (max-width: 768px) {
@@ -30,4 +30,3 @@ header {
         padding-block: 1.5rem;
     }
 }
-

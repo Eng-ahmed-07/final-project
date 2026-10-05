@@ -1,6 +1,19 @@
 .banner-shop{
     position: relative;
 
+    .banner-shop-image {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 172px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
     .banner-shop-content{
         @include flex(column, center, center, 0.5rem);
         position: absolute;
@@ -33,6 +46,14 @@
 
 @media (max-width: 767px) {
     .banner-shop{
+        
+        .banner-shop-image {
+            min-height: 20rem;
+            img {
+                min-height: 8rem;
+            }
+        }
+
         .banner-shop-content{
             h2{
                 font-size: 2.5rem;

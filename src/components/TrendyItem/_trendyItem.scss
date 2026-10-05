@@ -1,21 +1,27 @@
 .box-trendy-item {
+    container-type: inline-size;
     width: 100%;
-    @include flex(row, center, flex-start, 1rem);
+    @include flex(row, center, flex-start, $space-4);
+
+    @container (min-width: 882px) {
+        .box-card .box-image-card {
+            aspect-ratio: 1 / 1;
+        }
+    }
 
     .box-card{
-        width: calc((100% / 5) - 1rem);
-
-        .box-image-card{
-            height: 13.5rem;
-        }
+        flex: 0 1 clamp(145px, calc(25cqw - .75rem), 260px);
+        min-width: 145px;
+        max-width: 260px;
+        width: auto;
 
         .box-content-card{
             h3{
-                font-size: .85rem;
+                font-size: $font-size-body;
             }
 
             h4{
-                font-size: .75rem;
+                font-size: $font-size-price;
             }
         }
     }
@@ -24,10 +30,6 @@
 
 @media (max-width: 1023px) {
     .box-card {
-
-        .box-image-card {
-            height: 20vh;
-        }
 
         .btn-card {
             @include flex(column, center, center, 0.5rem);
@@ -42,19 +44,19 @@
             button {
                 @include flex(row, center, center, 0);
                 padding: 0.5rem .5rem;
-                font-size: 1.1rem;
+                font-size: 1.4rem;
             }
         }
 
         .box-content-card {
 
             h3 {
-                font-size: 1.1rem;
+                font-size: 1rem;
                 font-weight: 500;
             }
 
             h4 {
-                font-size: 1rem;
+                font-size: .9rem;
                 font-weight: 500;
             }
         }
@@ -67,8 +69,8 @@
                     padding: .2rem;
 
                     span {
-                        width: 1.1rem;
-                        height: 1.1rem;
+                        width: 1rem;
+                        height: 1rem;
                     }
                 }
 
@@ -84,12 +86,6 @@
 
     
     .box-card {
-        width: calc((100% / 2) - 1rem);
-
-        .box-image-card {
-            height: 30vh;
-        }
-
         .btn-card {
             button {
                 font-size: 2.2rem;
@@ -99,12 +95,12 @@
         .box-content-card {
 
             h3 {
-                font-size: 1.6rem;
+                font-size: 1.45rem;
                 font-weight: 500;
             }
 
             h4 {
-                font-size: 1.6rem;
+                font-size: 1.3rem;
                 font-weight: 500;
             }
         }

@@ -41,6 +41,7 @@ export default function SliderDiscount({ item }) {
                 <img src={item?.images[0]} alt={item?.name} className="image-discount" />
                 <img src={item?.images[1]} alt={item?.name} className="hover-image-discount" />
             </div>
+            <div className="space"></div>
             <div className="slider-discount-content">
                 <h2>{item?.name}</h2>
                 <h4><del>${item?.old_price}</del> ${item?.new_price}</h4>
