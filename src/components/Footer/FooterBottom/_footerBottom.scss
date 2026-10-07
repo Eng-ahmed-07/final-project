@@ -5,7 +5,18 @@
 
     p{
         font-size: .8rem;
-        color: $TextColor1;
+        color: $TextColor2;
+
+        a{
+            color: $TextColor1;
+            text-transform: capitalize;
+            text-decoration: none;
+            transition: 0.3s;
+
+            &:hover{
+                color: $mainColor;
+            }
+        }
     }
 
     ul{

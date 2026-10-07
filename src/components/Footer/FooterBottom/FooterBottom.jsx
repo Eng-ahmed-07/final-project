@@ -4,7 +4,7 @@ export default function FooterBottom() {
     return (
         <>
             <div className="bottom-footer px">
-                <p>© 2026 <a href="https://ahmed-tech-zeta.vercel.app/">Ahmed Mohamed</a>. All rights reserved.</p>
+                <p>© 2026 <a href="https://ahmed-tech-zeta.vercel.app/" target="_blank" rel="noopener noreferrer">Ahmed Mohamed</a>. All rights reserved.</p>
 
                 <ul>
                     <li>
